@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links</title>
+    <style>
+
+        /*Seletores Personalizados
+        # = id
+        . = class
+        : = pseudo-classe        
+        :: = pesudo-elemento
+        > = children
+        */
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      a {
+        color: rgb(240, 111, 111);
+        text-decoration: none;
+        font-weight: bold;
+      }
+     
+      a:visited {
+        color: rgb(240, 52, 52);
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: rgba(109, 5, 5, 0.842);
+      }
+
+      a:active {
+        color: rgb(43, 1, 1);
+      }
+
+      .especial::after {
+        content: "⇜";
+        font-weight: normal;
+        color: rgba(43, 1, 1, 0.726);
+      }
+
+      .especial::before {
+        content: "⇝";
+        font-weight: normal;
+        color: rgba(43, 1, 1, 0.726);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personalizando links</h1>
+    <ul>
+      <li><a href="https://metsul.com/" target="_blank">Site da Metsul</a></li>
+      <li>
+        <a href="https://portal.inmet.gov.br/" target="_blank" class="especial"
+          >Site do Inmet</a
+        >
+      </li>
+      <li>
+        <a href="https://www.alegretetudo.com.br/" target="_blank"
+          >Portal Alegrete Tudo</a
+        >
+      </li>
+    </ul>
+  </body>
+</html>

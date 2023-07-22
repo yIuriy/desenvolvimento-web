@@ -1,0 +1,25 @@
+@charset "UtF-8";
+
+/* 
+#AD5771
+#FFB3C9
+#FA96B3
+#65AD45
+#77AD5F
+*/  
+
+body{
+    background-image: linear-gradient(to top, #FA96B3, #FFB3C9);
+   
+}
+
+ul{font-size: 15pt;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black
+}
+    
+    abbr{
+        text-decoration: underline;
+    }
+    
