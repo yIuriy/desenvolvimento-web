@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      table {
+        width: 500px;
+        border-collapse: collapse;
+      }
+
+      th,
+      tr,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+
+      td.num {
+        text-align: right;
+      }
+
+      thead,
+      tfoot {
+        background-color: rgba(0, 0, 0, 0.356);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- Anatomia para tabelas grandes
+            TABLE
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+                -->
+    <table>
+      <thead>
+        <tr>
+          <th>Posição</th>
+          <th>Estado</th>
+          <th>População<small>2022</small></th>
+          <th>País Comparável</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1º</td>
+          <td>São Paulo</td>
+          <td class="num">44 420 459</td>
+          <td>Espanha</td>
+        </tr>
+        <tr>
+          <td>2º</td>
+          <td>Minas Gerais</td>
+          <td class="num">20 538 718</td>
+          <td>Burquina Fasso</td>
+        </tr>
+        <tr>
+          <td>3º</td>
+          <td>Rio de Janeiro</td>
+          <td class="num">16 054 524</td>
+          <td>Camboja</td>
+        </tr>
+        <tr>
+          <td>4º</td>
+          <td>Bahia</td>
+          <td class="num">14 016 906</td>
+          <td>Zimbabwe</td>
+        </tr>
+        <tr>
+          <td>5º</td>
+          <td>Paraná</td>
+          <td class="num">11 443 208</td>
+          <td>Tunísia</td>
+        </tr>
+        <tr>
+          <td>6º</td>
+          <td>Rio Grande do Sul</td>
+          <td class="num">10 880 506</td>
+          <td>Cuba</td>
+        </tr>
+        <tr>
+          <td>7º</td>
+          <td>Pernambuco</td>
+          <td class="num">9 058 155</td>
+          <td>Áustria</td>
+        </tr>
+        <tr>
+          <td>8º</td>
+          <td>Ceará</td>
+          <td class="num">8 791 688</td>
+          <td>Papua-Nova Guiné</td>
+        </tr>
+        <tr>
+          <td>9º</td>
+          <td>Pará</td>
+          <td class="num">8 116 132</td>
+          <td>Suíça</td>
+        </tr>
+        <tr>
+          <td>10º</td>
+          <td>Santa Catarina</td>
+          <td class="num">7 609 601</td>
+          <td>Paraguai</td>
+        </tr>
+        <tr>
+          <td>11º</td>
+          <td>Goiás</td>
+          <td class="num">7 055 228</td>
+          <td>Bulgária</td>
+        </tr>
+        <tr>
+          <td>12º</td>
+          <td>Maranhão</td>
+          <td class="num">6 775 152</td>
+          <td>Bulgária</td>
+        </tr>
+        <tr>
+          <td>13°</td>
+          <td>Paraíba</td>
+          <td class="num">3 974 495</td>
+          <td>Geórgia</td>
+        </tr>
+        <tr>
+          <td>14º</td>
+          <td>Amazonas</td>
+          <td class="num">3 941 175</td>
+          <td>Geórgia</td>
+        </tr>
+        <tr>
+          <td>15º</td>
+          <td>Espírito Santo</td>
+          <td class="num">3 833 486</td>
+          <td>Geórgia</td>
+        </tr>
+        <tr>
+          <td>16º</td>
+          <td>Mato Grosso</td>
+          <td class="num">3 658 813</td>
+          <td>Geórgia</td>
+        </tr>
+        <tr>
+          <td>17º</td>
+          <td>Rio Grande do Norte</td>
+          <td class="num">3 302 406</td>
+          <td>Uruguai</td>
+        </tr>
+        <tr>
+          <td>18º</td>
+          <td>Piauí</td>
+          <td class="num">3 269 200</td>
+          <td>Bósnia e Herzegovina</td>
+        </tr>
+        <tr>
+          <td>19º</td>
+          <td>Alagoas</td>
+          <td class="num">3 127 511</td>
+          <td>Mónaco</td>
+        </tr>
+        <tr>
+          <td>20º</td>
+          <td>Distrito Federal</td>
+          <td class="num">2 817 068</td>
+          <td>Armênia</td>
+        </tr>
+        <tr>
+          <td>21º</td>
+          <td>Mato Grosso do Sul</td>
+          <td class="num">2 756 700</td>
+          <td>Albânia</td>
+        </tr>
+        <tr>
+          <td>22º</td>
+          <td>Sergipe</td>
+          <td class="num">2 209 558</td>
+          <td>Gabão</td>
+        </tr>
+        <tr>
+          <td>23º</td>
+          <td>Rondônia</td>
+          <td class="num">1 581 016</td>
+          <td>Bahrein</td>
+        </tr>
+        <tr>
+          <td>24º</td>
+          <td>Tocantins</td>
+          <td class="num">1 511 459</td>
+          <td>Guiné Equatorial</td>
+        </tr>
+        <tr>
+          <td>25º</td>
+          <td>Acre</td>
+          <td class="num">830 026</td>
+          <td>Comores</td>
+        </tr>
+        <tr>
+          <td>26º</td>
+          <td>Amapá</td>
+          <td class="num">733 508</td>
+          <td>Guiné</td>
+        </tr>
+        <tr>
+          <td>27º</td>
+          <td>Roraima</td>
+          <td class="num">636 303</td>
+          <td>Montenegro</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td>
+          <a
+            href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o#:~:text=Esta%20%C3%A9%20uma%20lista%20da%20popula%C3%A7%C3%A3o%20das%20unidades,de%202023%2C%20com%20base%20no%20Censo%20de%202022."
+            target="_blank"
+            rel="noopener"
+            >Fonte</a
+          >
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tfoot>
+    </table>
+  </body>
+</html>
