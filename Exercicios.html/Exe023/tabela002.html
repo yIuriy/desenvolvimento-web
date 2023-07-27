@@ -8,6 +8,26 @@
       table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+      }
+
+      caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: rgba(128, 128, 128, 0.178);
+        border: 1px solid black;
+      }
+
+      thead {
+        border: 1px solid black;
+        color: white;
+      }
+
+      thead {
+        position: sticky;
+        top: -1px;
+        background-color: rgba(0, 0, 0, 0.651);
       }
 
       th,
@@ -17,20 +37,35 @@
         padding: 10px;
       }
 
+      tbody > tr:nth-child(odd) {
+        /* 2n-1*/
+        background-color: rgba(0, 0, 0, 0.185);
+      }
+
+      tbody > tr:nth-child(even) {
+        /* 2n */
+        background-color: white;
+      }
+
       td.num {
         text-align: right;
       }
 
-      thead,
-      tfoot {
-        background-color: rgba(0, 0, 0, 0.356);
+      tfoot a {
+        text-decoration: none;
+        color: black;
+      }
+
+      tfoot a:hover {
+        text-decoration: underline;
+        font-weight: 600;
       }
     </style>
   </head>
   <body>
-    <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia para tabelas grandes
             TABLE
+                CAPTION
                 THEAD
                     TR, TD, TH
                 TBODY
@@ -39,12 +74,15 @@
                     TR, TD, TH
                 -->
     <table>
+      <caption>
+        População das Unidades Federativas em 2022
+      </caption>
       <thead>
         <tr>
-          <th>Posição</th>
-          <th>Estado</th>
-          <th>População<small>2022</small></th>
-          <th>País Comparável</th>
+          <th scope="col">Posição</th>
+          <th scope="col">Estado</th>
+          <th scope="col">População<sup>2022</sup></th>
+          <th scope="col">País Comparável</th>
         </tr>
       </thead>
       <tbody>
@@ -212,17 +250,15 @@
         </tr>
       </tbody>
       <tfoot>
-        <td>
+        <td colspan="4">
+          Fonte:
           <a
             href="https://pt.wikipedia.org/wiki/Lista_de_unidades_federativas_do_Brasil_por_popula%C3%A7%C3%A3o#:~:text=Esta%20%C3%A9%20uma%20lista%20da%20popula%C3%A7%C3%A3o%20das%20unidades,de%202023%2C%20com%20base%20no%20Censo%20de%202022."
             target="_blank"
             rel="noopener"
-            >Fonte</a
+            >Lista de Unidades Federativas do Brasil por População</a
           >
         </td>
-        <td></td>
-        <td></td>
-        <td></td>
       </tfoot>
     </table>
   </body>
