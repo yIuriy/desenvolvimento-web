@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adicionando conteúdos</title>
+    <style>
+      div#video {
+        padding: 56.25% 0 0 0;
+        position: relative;
+      }
+
+      iframe#vimeo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      iframe {
+        border: solid 0.1px rgba(0, 0, 0, 0.377);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Conteúdo dentro do iframe</h1>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium
+      molestias, quibusdam eius voluptatum excepturi enim veniam magni
+      repellendus voluptate exercitationem maiores modi assumenda nihil ad ipsum
+      autem dolor ipsam officia!
+    </p>
+    <h2>Vídeos</h2>
+    <div id="video">
+      <iframe
+        id="vimeo"
+        src="https://player.vimeo.com/video/265045525?h=217b87fac0"
+        frameborder="0" 
+        allowfullscreen
+        title="video 'Looking For Something'"
+      ></iframe>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, reiciendis
+      cum. Iure reprehenderit quisquam sint atque consectetur similique animi
+      commodi non quibusdam sit, tempora praesentium distinctio voluptates ea
+      architecto incidunt?
+    </p>
+    <h2>Maps do Google</h2>
+    <iframe
+      frameborder="0"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.1230728428554!2d12.4922309!3d41.890210200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b6532013ad%3A0x28f1c82e908503c4!2sColiseu!5e0!3m2!1spt-BR!2sbr!4v1690840230880!5m2!1spt-BR!2sbr"
+      width="600"
+      height="450"
+      allowfullscreen=""
+      title="mapa mostrando o colisseu"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+      praesentium ut sint, minima amet quasi asperiores eum eaque tempore
+      mollitia libero? Culpa, soluta vitae quis laborum aliquam iste sint
+      excepturi.
+    </p>
+    <h2>Maps do Waze</h2>
+    <iframe
+      src="https://embed.waze.com/iframe?zoom=16&lat=41.890239&lon=12.492307&ct=livemap"
+      width="600"
+      height="450"
+      allowfullscreen
+      title="mapawaze"
+      frameborder="0"
+    ></iframe>
+    <p>lorem</p>
+    <h2>Documentos google em geral</h2>
+    <iframe
+      src="https://docs.google.com/presentation/d/e/2PACX-1vRw7rU0jbm8VSML6l6i0D5GHLqfC-xRp5DovYQUOUcKfQfM1t6kEvWSODdWLaVoGQvdTD9EU-93AP2J/embed?start=false&loop=false&delayms=3000"
+      frameborder="0"
+      width="600"
+      height="450"
+      allowfullscreen="true"
+      mozallowfullscreen="true"
+      webkitallowfullscreen="true"
+      title="slides"
+    ></iframe>
+  </body>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+</html>
