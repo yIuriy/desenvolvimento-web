@@ -51,6 +51,10 @@ main h2{
     padding-bottom: 20px;
 }
 
+main p{
+    padding: 10px;
+}
+ 
 main article{
     min-width: 300px;
     max-width: 600px;
@@ -59,8 +63,4 @@ main article{
     text-align: justify;
     margin: auto;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.24);
-}
-
-main p{
-    padding: 10px;
 }
