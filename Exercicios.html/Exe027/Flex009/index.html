@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+      body {
+        background-color: lightgrey;
+      }
+
+      div.container {
+        background-color: rgb(191, 127, 23);
+        display: flex;
+        border-radius: 9px;
+        margin: 2px;
+        padding: 15px;
+        flex-flow: row wrap;
+        height: auto;
+      }
+
+      div.item {
+        background-color: rgb(96, 22, 15);
+        border: 1px solid black;
+        text-align: center;
+        border-radius: 3px;
+        margin: 2px;
+        padding: 6px;
+        font-size: 150%;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: white;
+        flex-basis: 50px;
+      }
+
+      div #i1 {
+        flex-basis: 16px;
+      }
+
+      div #i1_5 {
+        flex-basis: 16px;
+        visibility: hidden;
+      }
+
+      div #i3 {
+        flex-basis: 16px;
+        visibility: hidden;
+      }
+
+      div #i3_5 {
+        flex-basis: 16px;
+      }
+
+      div #i2 {
+        flex-basis: 254px;
+      }
+
+      div #i8 {
+        flex-basis: 117px;
+      }
+
+      div #i9 {
+        flex-basis: 119px;
+      }
+
+      div #i11 {
+        flex-basis: 390px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="i1">A</div>
+      <div class="item" id="i1_5">B</div>
+
+      <div class="item" id="i2">C</div>
+      <div class="item" id="i3">D</div>
+      <div class="item" id="i3_5">E</div>
+
+      <div class="item" id="i7">E</div>
+      <div class="item" id="i8">F</div>
+      <div class="item" id="i9">G</div>
+      <div class="item" id="i10">H</div>
+      <div class="item" id="i11">I</div>
+    </div>
+  </body>
+</html>

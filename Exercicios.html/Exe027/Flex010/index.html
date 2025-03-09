@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+      body {
+        background-color: lightgrey;
+      }
+
+      div.container {
+        background-color: rgb(191, 127, 23);
+        display: flex;
+        border-radius: 9px;
+        margin: 2px;
+        padding: 15px;
+        flex-flow: row nowrap;
+        align-items: center;
+      }
+
+      div.item {
+        display: flex;
+        background-color: rgb(39, 53, 87);
+        border: 1px solid black;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        margin: 2px;
+        padding: 5px;
+        color: white;
+        height: 25px;
+        flex-basis: 205px;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+
+      div .i1 {
+        flex-grow: 1;
+        flex-shrink: 4;
+      }
+
+      div .i2 {
+        flex-grow: 1;
+        flex-shrink: 2;
+      }
+
+      div .i3 {
+        flex-grow: 1;
+        flex-shrink: 6;
+        background-color: gold;
+      }
+
+      div .i4 {
+        flex-grow: 1;
+        flex-shrink: 2;
+      }
+
+      div.i5 {
+        flex-grow: 1;
+        flex-shrink: 4;
+      }
+
+      div.i6 {
+        flex-grow: 1;
+        flex-shrink: 2;
+      }
+
+      div.i7 {
+        flex-grow: 1;
+        flex-shrink: 4;
+        background-color: gold;
+      }
+
+      div.i8 {
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-image: linear-gradient(black, grey);
+      }
+
+      div.i9 {
+        flex-grow: 2;
+        flex-shrink: 4;
+        background-color: gold;
+      }
+
+      div .i10 {
+        flex-grow: 1;
+        flex-shrink: 2;
+      }
+
+      div.i11 {
+        flex-grow: 1;
+        flex-shrink: 6;
+        background-color: gold;
+      }
+
+      div.i12 {
+        flex-grow: 1;
+        flex-shrink: 2;
+        background-image: linear-gradient(grey, black);
+      }
+
+      div.i13 {
+        flex-grow: 1;
+        flex-shrink: 1;
+        background-image: linear-gradient(grey, black);
+      }
+
+      div.i14 {
+        flex-grow: 1;
+        flex-shrink: 2;
+        background-image: linear-gradient(grey, black);
+      }
+
+      div.i15 {
+        flex-grow: 1;
+        flex-shrink: 6;
+        background-color: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item i1"></div>
+      <div class="item i2"></div>
+      <div class="item i3"></div>
+      <div class="item i4"></div>
+      <div class="item i5"></div>
+    </div>
+
+    <div class="container">
+      <div class="item i6"></div>
+      <div class="item i7"></div>
+      <div class="item i8"></div>
+      <div class="item i9"></div>
+      <div class="item i10"></div>
+    </div>
+
+    <div class="container">
+      <div class="item i11"></div>
+      <div class="item i12"></div>
+      <div class="item i13"></div>
+      <div class="item i14"></div>
+      <div class="item i15"></div>
+    </div>
+
+    <div class="container">
+      <div class="item i6"></div>
+      <div class="item i7"></div>
+      <div class="item i8"></div>
+      <div class="item i9"></div>
+      <div class="item i10"></div>
+    </div>
+
+    <div class="container">
+      <div class="item i1"></div>
+      <div class="item i2"></div>
+      <div class="item i3"></div>
+      <div class="item i4"></div>
+      <div class="item i5"></div>
+    </div>
+  </body>
+</html>

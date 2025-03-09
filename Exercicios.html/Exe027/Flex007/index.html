@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex-Box</title>
+    <style>
+      body {
+        background-color: lightgrey;
+      }
+
+      div.container {
+        background-color: rgb(191, 127, 23);
+        display: flex;
+        border-radius: 9px;
+        margin: 2px;
+        padding: 15px;
+        flex-flow: row wrap;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+      }
+
+      div.item {
+        display: flex;
+        background-color: rgb(96, 22, 15);
+        border: 1px solid black;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        margin: 2px;
+        padding: 5px;
+        color: white;
+        height: 50px;
+        width: 50px;
+      }
+
+      div #a {
+        order: 2;
+      }
+
+      div #b {
+        order: -2;
+      }
+
+      div #c {
+        order: -9;
+      }
+
+      div #d {
+        order: 12;
+        
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="a">2</div>
+      <div class="item" id="b">-2</div>
+      <div class="item" id="c">-9</div>
+      <div class="item" id="d">12</div>
+    </div>
+  </body>
+</html>

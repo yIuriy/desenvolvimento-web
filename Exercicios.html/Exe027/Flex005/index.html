@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centralização Absoluta</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: lightsalmon;
+      }
+
+      main {
+        background-color: lightblue;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        background-color: lightpink;
+        height: 200px;
+        width: 250px;
+        border-radius: 10px;
+        text-align: center;
+        padding: 6px;
+        box-shadow: 1px;
+      }
+
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+      }
+
+      label {
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      input {
+        border-radius: 10px;
+        height: 25px;
+      }
+
+      #btnEntrar {
+        width: 100px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>Tela de Login</h1>
+        <div>
+          <label id="lblEmail"
+            >Email
+            <input type="text" name="email" id="email" aria-label="Email" />
+          </label>
+          <label id="lblSenha"
+            >Senha
+            <input type="password" name="senha" id="senha" aria-label="Senha" />
+          </label>
+          <input type="button" value="Entrar" id="btnEntrar" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
