@@ -1,0 +1,26 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+div.container{
+    display: grid;
+    border: 2px dashed black;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+div.item{
+    background-color: lightblue;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 40px;
+    border: 1px dashed red;
+}
