@@ -1,0 +1,66 @@
+div.container {
+  display: grid;
+  border: 2.5px dashed rgb(11, 11, 254);
+  grid-template: repeat(3, 100px)  / repeat(4, 1fr);
+}
+
+div.item1 {
+  background-color: rgb(182, 230, 173);
+  grid-column-start: auto;
+  border: 1px dashed rgb(255, 0, 0);
+  grid-column-start: 1;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+div.item2 {
+  background-color: rgb(12, 210, 15);
+  grid-column-start: auto;
+  border: 1px dashed rgb(255, 0, 0);
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: -2;
+}
+
+div.item3 {
+  background-color: rgb(230, 209, 173);
+  grid-column-start: auto;
+  border: 1px dashed rgb(255, 0, 0);
+  grid-column-start: 3;
+  grid-column-end: -2;
+  grid-row-start: 2;
+  grid-row-end: -2;
+}
+
+div.item4 {
+  background-color: rgb(173, 203, 230);
+  grid-column-start: auto;
+  border: 1px dashed rgb(255, 0, 0);
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: -1;
+}
+
+div.item5 {
+  background-color: rgb(206, 205, 247);
+  grid-column-start: auto;
+  border: 1px dashed rgb(255, 0, 0);
+  grid-column-start: 2;
+  grid-column-end: -2;
+  grid-row-start: 3;
+  grid-row-end: -2;
+}
+
+
+div.item6 {
+  background-color: rgb(12, 9, 196);
+  grid-column-start: auto;
+  border: 1px dashed rgb(255, 0, 0);
+  grid-column-start: 4;
+  grid-column-end: -1;
+  grid-row-start: -3;
+  grid-row-end: -1;
+}

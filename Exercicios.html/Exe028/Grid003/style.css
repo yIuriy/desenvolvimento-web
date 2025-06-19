@@ -1,9 +1,12 @@
 div.container {
   display: grid;
   border: 3px dashed blue;
-  grid-template: repeat(3, 100px)  / 100px 20% repeat(2, 1fr) ;
-  width: 1500px;
-
+  grid-template: repeat(3, 80px)  / repeat(3, auto) ;
+  place-items: normal normal;
+  gap: 10px;;
+  place-content: normal normal;
+  grid-auto-rows: 80px;
+  grid-auto-flow: column;
 }
 
 div.item {

@@ -1,0 +1,21 @@
+div.container {
+  display: grid;
+  border: 2.5px dashed rgb(11, 11, 254);
+  grid-template: repeat(3, 100px)  / repeat(4, 1fr);
+}
+
+div.item1 {
+  background-color: rgb(182, 230, 173);
+  border: 1px dashed rgb(255, 0, 0);
+  grid-column-start: 1 ;
+  grid-column-end: span 2;
+  grid-row-start: 1;
+  grid-row-end: span 3;
+}
+
+div.item2{
+  background-color: lightcoral;
+  grid-column: 3 / 5;
+  grid-row: 1 / -1;
+  /*grid-area: row-start / column-start / row-end / column-end;*/
+}
